@@ -1,5 +1,13 @@
+<select (change)="onChange($event.target.value)">
+  <option value="all" selected="selected">Show All</option>
+  <option value="isEmpty">Show Empty</option>
+  <option value="notEmpty">Show Not Empty</option>
+</select>
 <keg-display *ngFor="#currentKeg of kegList"
   (click)="kegClicked(currentKeg)"
   [class.selected]="currentKeg === selectedKeg"
   [keg]="currentKeg">
 </keg-display>
+<edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">
+</edit-keg-details>
+<new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
