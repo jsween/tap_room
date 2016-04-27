@@ -1,8 +1,8 @@
-# _Project Title_
+# _Tap Room_
 
-#### _A simple template, 3.__.2016_
+#### _A simple template, 3.15.2016_
 
-### By _**Jon Sweeney and **_
+### By _**Jon Sweeney and Josh Overly **_
 
 ## Description
 
